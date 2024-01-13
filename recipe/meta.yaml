@@ -30,8 +30,10 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-ggally
     - r-rcpp >=0.12.11
     - r-rcpparmadillo
     - r-ellipse
@@ -46,6 +48,18 @@ requirements:
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
+    - r-ggally
+    - r-rcpp >=0.12.11
+    - r-rcpparmadillo
+    - r-ellipse
+    - r-fastcluster
+    - r-ggplot2
+    - r-pheatmap
+    - r-reshape2
+    - r-truncnorm
+  
+  host:
+    - r-base
     - r-rcpp >=0.12.11
     - r-rcpparmadillo
     - r-ellipse
