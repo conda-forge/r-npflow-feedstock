@@ -57,17 +57,6 @@ requirements:
     - r-pheatmap
     - r-reshape2
     - r-truncnorm
-  
-  host:
-    - r-base
-    - r-rcpp >=0.12.11
-    - r-rcpparmadillo
-    - r-ellipse
-    - r-fastcluster
-    - r-ggplot2
-    - r-pheatmap
-    - r-reshape2
-    - r-truncnorm
 
 test:
   commands:
